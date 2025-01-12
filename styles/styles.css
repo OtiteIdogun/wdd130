@@ -21,8 +21,8 @@ main img {
   box-shadow: 0 0 30px gray;
 }
 
-main p {
-  padding: 10px;
+p {
+  padding: 0;
 } 
 
 main {
@@ -37,10 +37,6 @@ aside {
   background-color: rgba(0, 0, 153, 0.1);
   color: #000;
   text-align: center;
-} 
-
-aside p {
-  padding: 0;
 } 
 
 aside img {
