@@ -47,6 +47,7 @@ aside {
   width: 20rem;
   text-align: center;
   text-shadow: 0 0 4px #fff;
+  position: relative;
 } 
 
 aside img {
@@ -55,7 +56,7 @@ aside img {
 }
 
 aside h2 {
-  position: relative;
+  position: absolute;
   top: 4em;
 }
 
