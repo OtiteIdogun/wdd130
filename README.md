@@ -1,3 +1,1 @@
-# wdd130
-
-# Web Fundamentals
+# wdd130 - Web Fundamentals
