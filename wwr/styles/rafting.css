@@ -5,9 +5,9 @@
     --primary-color: #2BA84A;   /* Green */
     --secondary-color: #248232; /* Darker Green */
     --accent1-color: #0471A6;   /* Blue */
-    --heading-text-colour: darkblue;
     --accent2-color: #061826;   /* Dark Color */
     --accent3-color: #FCFFFC;   /* Light Color */
+    --heading-text-colour: darkblue;
     --white: #fff;
     --black: #061826;
     --light-transparent: rgb(252 255 252 / 0.6);
@@ -39,11 +39,11 @@ p {
 
 .hero {
     margin-bottom: 20px;
-}
+} 
 
-.hero img {
+.hero > img {
     position: relative; 
-    max-width: 100%;
+    width: 100%;
     
 }
 
