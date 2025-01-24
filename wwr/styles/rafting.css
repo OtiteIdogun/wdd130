@@ -1,0 +1,76 @@
+:root {
+    /*
+     Colours
+    */
+    --primary-color: #2BA84A;   /* Green */
+    --secondary-color: #248232; /* Darker Green */
+    --accent1-color: #0471A6;   /* Blue */
+    --heading-text-colour: darkblue;
+    --accent2-color: #061826;   /* Dark Color */
+    --accent3-color: #FCFFFC;   /* Light Color */
+    --white: #fff;
+    --black: #061826;
+    --light-transparent: rgb(252 255 252 / 0.6);
+    --dark-transparent: rgb(0 0 0 / 0.4);
+}
+
+* {
+    padding: 0;
+}
+
+body {
+    background: #E0E0E0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 800;
+    color: var(--heading-text-colour);
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+p {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+.hero {
+    margin-bottom: 20px;
+}
+
+.hero img {
+    position: relative; 
+    max-width: 100%;
+    
+}
+
+.text {
+    max-width: 80%;
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    background: var(--dark-transparent);
+    padding: 20px;
+    color: var(--white);
+}
+
+.text h1,
+.text p {
+    color: var(--white);
+}
+
+.hero article img {
+    float: right;
+    margin: 0 0 0 1rem;
+    border-radius: 10px;
+}
+
+section {
+    max-width: 90%;
+    background: var(--accent3-color)/*#E0E0E0*/;
+    margin: 30px auto;
+    padding: 20px;
+}
