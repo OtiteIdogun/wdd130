@@ -2,11 +2,11 @@
     /*
      Colours
     */
-    --primary-color: #2BA84A;   /* Green */
-    --secondary-color: #248232; /* Darker Green */
-    --accent1-color: #0471A6;   /* Blue */
-    --accent2-color: #061826;   /* Dark Color */
-    --accent3-color: #FCFFFC;   /* Light Color */
+    --primary-color: #2BA84A;
+    --secondary-color: #248232;
+    --accent1-color: #0471A6;
+    --accent2-color: #061826;
+    --accent3-color: #FCFFFC; 
     --heading-text-colour: darkblue;
     --white: #fff;
     --black: #061826;
@@ -70,7 +70,7 @@ p {
 
 section {
     max-width: 90%;
-    background: var(--accent3-color)/*#E0E0E0*/;
+    background: var(--white);
     margin: 30px auto;
     padding: 20px;
 }
