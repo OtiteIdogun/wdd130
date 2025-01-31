@@ -1,6 +1,10 @@
 :root {
-  --colour-darkblue: darkblue;
-  --colour-black: #000;
+  --black: #000;
+  --white: #fff; 
+  --darkblue: darkblue;
+  --azureblue: rgba(9, 94, 165, 1);
+  --light-transparent: rgba(13, 74, 170, 1);
+  --dark-transparent: rgb(0 0 0 / 0.4);
 }
 
 * {
@@ -14,7 +18,7 @@ body {
 }
 
 nav {
-  background-color: var(--colour-darkblue);
+  background-color: var(--darkblue);
   padding: 10px;
   display: flex;
   justify-content: space-evenly;
@@ -36,7 +40,7 @@ footer,
 }
 
 main h1 {
-  color: var(--colour-darkblue);
+  color: var(--darkblue);
   margin: 1rem;
   border-bottom: 2px solid black;
 }
@@ -91,7 +95,7 @@ aside h2 {
 
 footer {
   margin-top: 30px;
-  border-top: 1px solid var(--colour-black);
+  border-top: 1px solid var(--darkblue);
   text-align: center;
 }
 
