@@ -41,14 +41,13 @@ header {
   justify-content: center;
   padding: 20px;
   background: var(--azureblue);
-  border-: 2px solid #ccc;
   margin-bottom: 10px;
 }
 
 .logo > img {
   height: 85px;
   width: 90px;
-  align-self: right;
+  align-self: center;
   padding: 0;
   margin: 0 0 0 40px;
   border: 1px solid #ccc;
@@ -73,7 +72,7 @@ nav a {
   background: var(--white);
   padding: 10px;
   border: 2px solid #fff;
-  border-radius: 10ppx;
+  border-radius: 5px;
 }
 
 nav a:hover {
@@ -81,7 +80,8 @@ nav a:hover {
   color: var(--white);
 }
 
-p {
+p, 
+a {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: #000;
 }
