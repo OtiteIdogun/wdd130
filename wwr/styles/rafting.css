@@ -116,7 +116,8 @@ p,
 .hero article img {
   float: right;
   margin: 0 0 0 1rem;
-  border-radius: 10px;
+  box-shadow: 0 0 2px var(--white);
+  border-radius: 10%;
 }
 
 section {
@@ -154,7 +155,7 @@ section {
 figure {
   place-content: center;
   width: 100%;
-  padding: 4px;
+  padding: 0px;
   margin: 0 auto;
   box-shadow: 0px 0px 4px #888;
 }
