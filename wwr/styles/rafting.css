@@ -70,7 +70,7 @@ nav a {
   font-weight: bold;
   color: var(--darkblue);
   background: var(--white);
-  padding: 4px;
+  padding: 3px;
   border: 2px solid #fff;
   border-radius: 5px;
 }
@@ -164,6 +164,7 @@ figcaption {
   width: 100%;
   place-self: center;
   text-align: center;
+  font-size: 0.8rem;
 }
 
 footer {
