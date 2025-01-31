@@ -11,7 +11,7 @@
   --white: #fff;
   --black: #061826;
   --light-transparent: rgba(13, 74, 170, 1);
-  --dark-transparent: rgb(0 0 0 / 0.4);
+  --dark-transparent: rgb(0 0 0 / 0.5);
 }
 
 * {
@@ -154,9 +154,9 @@ section {
 figure {
   place-content: center;
   width: 100%;
-  padding: 0px;
+  padding: 4px;
   margin: 0 auto;
-  box-shadow: 0px 0px 4px #ccc;
+  box-shadow: 0px 0px 4px #888;
 }
 
 figure img, 
