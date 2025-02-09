@@ -9,6 +9,7 @@
   --accent3-color: #fcfffc;
   --azureblue: rgba(9, 94, 165, 1);
   --white: #fff;
+  --dim-white: #e0e0e0;
   --black: #061826;
   --light-transparent: rgba(13, 74, 170, 1);
   --dark-transparent: rgb(0 0 0 / 0.5);
@@ -19,20 +20,15 @@
 }
 
 body {
-  background: #e0e0e0;
+  background-color: #f4f4f4;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 800;
   color: var(--azureblue);
-  place-self: center;
   margin-bottom: 1rem;
+  place-self: center;
 }
 
 header {
@@ -48,15 +44,14 @@ header {
   height: 85px;
   width: 90px;
   align-self: center;
-  padding: 0;
-  margin: 0 0 0 40px;
+  margin-left: 40px;
   border: 1px solid #ccc;
   border-radius: 30%;
 }
 
 nav {
   display: flex;
-  margin: 0 40px 0 0;
+  margin-right: 40px;
 }
 
 nav a {
@@ -80,8 +75,7 @@ nav a:hover {
   color: var(--white);
 }
 
-p, 
-* {
+p, * {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: #000;
 }
@@ -92,7 +86,6 @@ p,
 }
 
 .hero > img {
-  position: relative;
   width: 100%;
   height: 24rem;
   margin: auto;
@@ -108,41 +101,38 @@ p,
   color: var(--white);
 }
 
-.text h1,
-.text p {
+.text h1, .text p {
   color: var(--white);
 }
 
 .hero article img {
   float: right;
-  margin: 0 0 0 1rem;
+  margin-left: 1rem;
   box-shadow: 0 0 2px var(--white);
   border-radius: 10%;
 }
 
+.contact .text article p {
+    text-align: center;
+}
+
 section {
-  max-width: 95%;
+  max-width: 55rem;
   background: var(--white);
-  margin: 2rem auto;
-  overflow: auto;
-}
-
-.history article,
-.adventure .images {
-  margin: 0 2rem 2rem 2rem;
-}
-
-.history article {
-  position: relative;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .history article {
   display: flex;
+  margin: 0 2rem 2rem;
 }
 
 .history article img {
   margin: 0 1.5rem;
-  max-width: 100%;
+  max-width: 20rem;
 }
 
 .adventure .images {
@@ -150,20 +140,17 @@ section {
   grid-template-columns: repeat(5, 140px);
   gap: 20px;
   justify-content: space-evenly;
+  overflow: auto;
 }
 
-figure {
-  place-content: center;
+.images > figure {
   width: 100%;
-  padding: 0px;
   margin: 0 auto;
-  box-shadow: 0px 0px 4px #888;
+  box-shadow: none /*0px 0px 4px #888*/;
 }
 
-figure img, 
-figcaption {
+.images figure img, figcaption {
   width: 100%;
-  place-self: center;
   text-align: center;
   font-size: 0.8rem;
 }
@@ -182,16 +169,19 @@ footer p {
   align-self: center;
 }
 
+
+footer social-links, 
 footer a {
-  padding: 0;
-  height: auto;
-  background: none;
-  border: none;
+    background: none;
+    border: none;
+    height: 100%;
+    margin: 0;
 }
 
-footer img {
+footer a img {
   padding: 0.5rem;
   place-self: center;
+  align-self: center;
   background: var(--white);
   border: 2px solid var(--white);
   border-radius: 6px;
@@ -201,3 +191,135 @@ footer img:hover {
   background: var(--azureblue);
   color: var(--white);
 }
+
+.contact-info .info {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    align-items: center;
+    margin: 0 0 0rem auto;
+}
+
+.contact-info .info img, 
+.contact-info > p > span {
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 1rem;
+    margin: 0 1rem 0 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 450px;
+  place-self: center;
+  border: 1px solid #ccc;
+}
+
+.employee-profiles {
+  display: flex;
+  justify-content: center;
+}
+
+.employee figcaption {
+  text-align: center;
+}
+
+.employee img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: var(--white);
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 55rem;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+  display: none;
+}
+
+.item2 {
+  flex: 1 3 300px;
+  padding-right: 20px;
+}
+
+.item1 {
+  flex: 3 1 300px;
+  padding: 0;
+}
+
+.item1, .item2 {
+  margin-bottom: auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: rgba(9, 94, 165, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: var(--azureblue);
+  border: 2px solid var(--azureblue);
+  outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  margin: 0 9rem 2rem 0;
+  float: right;
+  place-self: center;
+}
+
+.check-box, .radio {
+  margin: 0 auto 2rem 0;
+}
+
+label[for="subscribe"] {
+  width: 50%;
+}
+
+input[type="submit"] {
+  background-color: var(--azureblue);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #4cae4c;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
