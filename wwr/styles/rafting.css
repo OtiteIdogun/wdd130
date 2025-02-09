@@ -192,7 +192,7 @@ footer img:hover {
   color: var(--white);
 }
 
-.contact-info .info {
+.company-info .info {
     display: flex;
     flex-wrap: wrap;
     font-size: 1.2rem;
@@ -200,8 +200,8 @@ footer img:hover {
     margin: 0 0 0rem auto;
 }
 
-.contact-info .info img, 
-.contact-info > p > span {
+.company-info .info img, 
+.company-info > p > span {
     padding: 10px;
     border: 1px solid #CCC;
     border-radius: 1rem;
