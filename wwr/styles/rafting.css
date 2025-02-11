@@ -17,6 +17,7 @@
 
 * {
   padding: 0;
+  border: 1px solid black;
 }
 
 body {
@@ -31,9 +32,14 @@ h1, h2, h3, h4, h5, h6 {
   place-self: center;
 }
 
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
 header {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   padding: 20px;
   background: var(--azureblue);
@@ -57,7 +63,7 @@ nav {
 nav a {
   text-decoration: none;
   display: block;
-  flex: 2 1 100px;
+  flex: 3 1 100px;
   text-align: center;
   align-self: center;
   margin: 0 10px;
@@ -87,29 +93,38 @@ p, * {
 
 .hero > img {
   width: 100%;
-  height: 24rem;
   margin: auto;
 }
 
+.hero .home {
+    max-height: 100%;
+}
+
 .text {
-  width: 80%;
+  max-width: 80%;
   position: absolute;
-  top: 250px;
+  top: 22rem;
   left: 8%;
+  place-self: center;
   background: var(--dark-transparent);
-  padding: 20px;
+  padding: 40px;
   color: var(--white);
+  text-align: center;
 }
 
 .text h1, .text p {
   color: var(--white);
 }
 
+.hero .text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
 .hero article img {
   float: right;
   margin-left: 1rem;
-  box-shadow: 0 0 2px var(--white);
-  border-radius: 10%;
+  border-radius: 50%;
 }
 
 .contact .text article p {
@@ -117,7 +132,7 @@ p, * {
 }
 
 section {
-  max-width: 55rem;
+  max-width: 93%;
   background: var(--white);
   margin: 20px auto;
   padding: 20px;
@@ -127,29 +142,36 @@ section {
 
 .history article {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 2rem 2rem;
 }
 
+.history article p {
+  flex: 2 2 200px;
+}
+
 .history article img {
-  margin: 0 1.5rem;
-  max-width: 20rem;
+  padding: 0 20px;
+  flex: 2 1 200px;
 }
 
 .adventure .images {
   display: grid;
-  grid-template-columns: repeat(5, 140px);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 1rem;
   justify-content: space-evenly;
-  overflow: auto;
 }
 
 .images > figure {
   width: 100%;
-  margin: 0 auto;
-  box-shadow: none /*0px 0px 4px #888*/;
+  margin: 0;
 }
 
-.images figure img, figcaption {
+.images figure img {
+  width: 100%;
+}
+
+.images figure figcaption {
   width: 100%;
   text-align: center;
   font-size: 0.8rem;
@@ -176,6 +198,7 @@ footer a {
     border: none;
     height: 100%;
     margin: 0;
+    justify-content: space-evenly;
 }
 
 footer a img {
@@ -185,6 +208,7 @@ footer a img {
   background: var(--white);
   border: 2px solid var(--white);
   border-radius: 6px;
+  margin: 0;
 }
 
 footer img:hover {
@@ -197,7 +221,7 @@ footer img:hover {
     flex-wrap: wrap;
     font-size: 1.2rem;
     align-items: center;
-    margin: 0 0 0rem auto;
+    margin: 0 auto 0 auto;
 }
 
 .company-info .info img, 
@@ -217,7 +241,8 @@ footer img:hover {
 
 .employee-profiles {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   overflow: auto;
 }
 
@@ -226,10 +251,11 @@ footer img:hover {
 }
 
 .employee img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-bottom: 10px;
+  place-content: center;
 }
 
 form {
@@ -239,7 +265,7 @@ form {
   background: var(--white);
   margin: 0 auto;
   padding: 20px;
-  max-width: 55rem;
+  max-width: 100%;
 }
 
 fieldset {
@@ -251,12 +277,12 @@ legend {
 }
 
 .item2 {
-  flex: 1 3 200px;
+  flex: 1 3 300px;
   padding-right: 20px;
 }
 
 .item1 {
-  flex: 4 1 200px;
+  flex: 3 1 300px;
   padding: 0;
 }
 
@@ -286,7 +312,7 @@ textarea:focus {
 
 input[type="radio"],
 input[type="checkbox"] {
-  display: inline-block;
+  display: inline;
   margin: 0 1rem 2rem 0;
   float: right;
   place-self: center;
@@ -321,3 +347,5 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
 }
+
+/* Edited Tues, Feb 11, 2025*/
