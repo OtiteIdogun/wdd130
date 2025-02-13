@@ -112,7 +112,7 @@ nav a:hover {
   clear: both;
 }
 
-.hero-text {
+.hero div {
   width: 80%;
   position: absolute;
   top: 50%;
@@ -124,11 +124,11 @@ nav a:hover {
   text-align: center;
 }
 
-.hero-text h1, .hero-text p {
+.hero div h1, .hero div p {
   color: var(--white);
 }
 
-.hero .hero-text h1 {
+.hero .hero div h1 {
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
 }
@@ -170,23 +170,23 @@ section {
 
 /* Adventure Section 
 */
-.adventure .images {
+.adventure-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, 200px);
   gap: 1rem;
   justify-content: space-evenly;
 }
 
-.images > figure {
+.adventure-images > figure {
   width: 100%;
   margin: 0;
 }
 
-.images figure img {
+.adventure-images img {
   width: 100%;
 }
 
-.images figure figcaption {
+.adventure-images figcaption {
   width: 100%;
   text-align: center;
   font-size: 0.8rem;
@@ -208,7 +208,7 @@ footer p {
   align-self: center;
 }
 
-.social-links {
+footer nav{
   margin: 0 0 0 1rem;
 }
 
@@ -238,7 +238,7 @@ footer img:hover {
 
 /* Company Info 
 */
-.company-info .info {
+.company-info div {
   display: flex;
   flex-wrap: wrap;
   font-size: 1.2rem;
@@ -246,7 +246,7 @@ footer img:hover {
   margin: 0 auto;
 }
 
-.company-info .info img, 
+.company-info div img, 
 .company-info > p > span {
   padding: 10px;
   border: 1px solid #CCC;
@@ -272,11 +272,11 @@ footer img:hover {
   overflow: auto;
 }
 
-.employee figcaption {
+.employee-profiles figcaption {
   text-align: center;
 }
 
-.employee img {
+.employee-profiles img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -356,8 +356,8 @@ label[for="subscribe"] {
 }
 
 button, 
-.cta-button,
-.btn {
+.call-to-action a,
+.trips-cta a {
   background-color: var(--azureblue);
   color: white;
   padding: 10px;
@@ -369,8 +369,8 @@ button,
 }
 
 button:hover,
-.cta-button:hover, 
-.trips-cta .btn:hover {
+.call-to-action a:hover, 
+.trips-cta a:hover {
   background-color: #004d00;
   color: var(--white);
 }
@@ -389,7 +389,7 @@ label {
   text-align: center;
 }
 
-.newsletter-text {
+.newsletter div {
   font-weight: 200;
   flex-grow: 2;
   padding: 10px;
@@ -408,12 +408,8 @@ label {
   text-align: left;
 }
 
-.newsletter-text p {
+.newsletter p {
   color: #333;
-}
-
-.form-description {
-  font-size: 0.9em;
 }
 
 .newsletter fieldset label {
@@ -437,14 +433,14 @@ label {
   padding: 20px;
 }
 
-.cta-button,
-.trips-cta-text a {
+.call-to-action a,
+.trips-cta a {
   color: white;
   text-decoration: none;
 } 
 
-a[class="cta-button"], 
-.trips-cta a[class="btn"] {
+.call-to-action a, 
+.trips-cta a {
     display: inline-block;
     margin:  1rem 0 0.5rem 0;
 }
@@ -480,7 +476,7 @@ a[class="cta-button"],
     margin-bottom: 40px;
 }
 
-.btn {
+call-to-action a {
     text-decoration: none;
 }
 
