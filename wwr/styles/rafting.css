@@ -325,7 +325,7 @@ input[type="name"] {
   width: 100%;
   padding: 1rem;
   margin-bottom: 10px;
-  border: 2px solid rgba(9, 94, 165, 0.1);
+  border: 1px solid #CCC;
   border-radius: 4px;
   box-sizing: border-box;
   background: rgba(9, 94, 165, 0.1);
@@ -336,7 +336,6 @@ input[type="email"]:focus,
 textarea:focus,
 input[type="name"]:focus {
   border-color: var(--azureblue);
-  border: 2px solid var(--azureblue);
   outline: none;
 }
 
