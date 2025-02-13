@@ -386,12 +386,10 @@ label {
 .newsletter {
   display: flex;
   flex-wrap: wrap;
-  justify-items: space-between;
+  text-align: center;
 }
 
 .newsletter-text {
-  align-content: left;
-  text-align: center;
   font-weight: 200;
   flex-grow: 2;
   padding: 10px;
