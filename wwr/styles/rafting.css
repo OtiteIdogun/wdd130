@@ -356,7 +356,9 @@ label[for="subscribe"] {
   width: 80%;
 }
 
-button {
+button, 
+.cta-button,
+.btn {
   background-color: var(--azureblue);
   color: white;
   padding: 10px;
@@ -367,7 +369,9 @@ button {
   font-weight: bold;
 }
 
-button:hover {
+button:hover,
+.cta-button:hover, 
+.trips-cta .btn:hover {
   background-color: #004d00;
   color: var(--white);
 }
@@ -436,16 +440,16 @@ label {
   padding: 20px;
 }
 
-.call-to-action a,
+.cta-button,
 .trips-cta-text a {
   color: white;
-  font-weight: 800;
   text-decoration: none;
-}
+} 
 
-.call-to-action button,
-.trips-cta-text button {
-  margin: 2rem 0 1.0rem 0;
+a[class="cta-button"], 
+.trips-cta a[class="btn"] {
+    display: inline-block;
+    margin:  1rem 0 0.5rem 0;
 }
 
 /* Purpose Section 
@@ -470,20 +474,6 @@ label {
 .trip img {
     width: 100%;
     height: auto;
-}
-
-/* Trip Categories 
-*/
-.trip-categories {
-  text-align: center;
-}
-
-.categories {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 20px;
 }
 
 /* Trip call to action Section 
