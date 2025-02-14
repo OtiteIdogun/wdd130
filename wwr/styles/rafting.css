@@ -1,5 +1,4 @@
-/* Root Variables 
-*/
+/* Root Variables */
 :root {
   --primary-color: #2ba84a;
   --secondary-color: #248232;
@@ -14,8 +13,7 @@
   --dark-transparent: rgb(0 0 0 / 0.5);
 }
 
-/* Global Styles 
-*/
+/* Global Styles */
 * {
   padding: 0;
   border: 0px solid black;
@@ -25,8 +23,7 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Typography 
-*/
+/* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 800;
@@ -45,8 +42,7 @@ p, * {
   color: #000;
 }
 
-/* Header 
-*/
+/* Header */
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -97,8 +93,7 @@ nav a:hover {
   color: var(--white);
 }
 
-/* Hero Section 
-*/
+/* Hero Section */
 .hero {
   position: relative;
   margin-bottom: 0;
@@ -139,8 +134,7 @@ nav a:hover {
   border-radius: 50%;
 }
 
-/* Section Styles 
-*/
+/* Section Styles */
 section {
   max-width: 93%;
   background: var(--white);
@@ -151,8 +145,7 @@ section {
   z-index: 30;
 }
 
-/* History Section 
-*/
+/* History Section */
 .history article {
   display: flex;
   flex-wrap: wrap;
@@ -168,8 +161,7 @@ section {
   flex: 2 1 100px;
 }
 
-/* Adventure Section 
-*/
+/* Adventure Section */
 .adventure-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, 200px);
@@ -192,8 +184,7 @@ section {
   font-size: 0.8rem;
 }
 
-/* Footer 
-*/
+/* Footer */
 footer {
   background: var(--azureblue);
   padding: 20px;
@@ -208,7 +199,7 @@ footer p {
   align-self: center;
 }
 
-footer nav{
+footer nav {
   margin: 0 0 0 1rem;
 }
 
@@ -236,8 +227,7 @@ footer img:hover {
   color: var(--white);
 }
 
-/* Company Info 
-*/
+/* Company Info */
 .company-info div {
   display: flex;
   flex-wrap: wrap;
@@ -254,8 +244,7 @@ footer img:hover {
   margin: 0 1rem 0 0;
 }
 
-/* Map 
-*/
+/* Map */
 .map iframe {
   width: 100%;
   height: 450px;
@@ -263,8 +252,7 @@ footer img:hover {
   border: 1px solid #ccc;
 }
 
-/* Employee Profiles 
-*/
+/* Employee Profiles */
 .employee-profiles {
   display: flex;
   flex-wrap: wrap;
@@ -284,8 +272,7 @@ footer img:hover {
   place-content: center;
 }
 
-/* Form Styles 
-*/
+/* Form Styles */
 form {
   display: flex;
   flex-direction: row;
@@ -343,7 +330,7 @@ input[type="radio"],
 input[type="checkbox"] {
   display: inline;
   margin: 0 1rem 2rem 0;
-  float: right;
+  float: left;
   place-self: center;
 }
 
@@ -377,12 +364,11 @@ button:hover,
 
 label {
   display: inline-block;
-  margin-bottom: 5px;
+  margin: 0px;
   font-weight: bold;
 }
 
-/* Newsletter 
-*/
+/* Newsletter */
 .newsletter {
   display: flex;
   flex-wrap: wrap;
@@ -426,8 +412,7 @@ label {
   width: 100%; /* Make button the same width as the input fields */
 }
 
-/* Call to Action 
-*/
+/* Call to Action */
 .call-to-action {
   text-align: center;
   padding: 20px;
@@ -436,78 +421,73 @@ label {
 .call-to-action a,
 .trips-cta a {
   color: white;
-  text-decoration: none;
+  text-decoration: none; 
 } 
 
 .call-to-action a, 
 .trips-cta a {
-    display: inline-block;
-    margin:  1rem 0 0.5rem 0;
+  display: inline-block;
+  margin: 1rem 0 0.5rem 0;
 }
 
-/* Purpose Section 
-*/
+/* Purpose Section */
 .purpose,
 .trip-descriptions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .offering,
 .trip {
-    width: 300px;
-    flex-grow: 2;
-    text-align: center;
-    margin: 20px;
+  width: 300px;
+  flex-grow: 2;
+  text-align: center;
+  margin: 20px;
 }
 
 .purpose .offering img,
 .trip img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-/* Trip call to action Section 
-*/
+/* Trip call to action Section */
 .trips-cta {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-call-to-action a {
-    text-decoration: none;
+.trips-cta a {
+  text-decoration: none;
 }
 
-/* Trip Table Section 
-*/
+/* Trip Table Section */
 .trip-table {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
 th {
-    background-color: rgba(9, 94, 165, 0.9);;
-    color: var(--white);
+  background-color: rgba(9, 94, 165, 0.9);
+  color: var(--white);
 }
 
 .wireframe a {
-    text-decoration: none;
-    padding: 2px 10px;
-    color: var(--azureblue);
+  text-decoration: none;
+  padding: 2px 10px;
+  color: var(--azureblue);
 }
-
-
