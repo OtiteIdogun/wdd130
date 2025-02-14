@@ -343,8 +343,7 @@ label[for="subscribe"] {
 }
 
 button, 
-.call-to-action a,
-.trips-cta a {
+a {
   background-color: var(--azureblue);
   color: white;
   padding: 10px;
@@ -356,8 +355,7 @@ button,
 }
 
 button:hover,
-.call-to-action a:hover, 
-.trips-cta a:hover {
+ a:hover {
   background-color: #004d00;
   color: var(--white);
 }
@@ -489,5 +487,6 @@ th {
 .wireframe a {
   text-decoration: none;
   padding: 2px 10px;
+  background: none;
   color: var(--azureblue);
 }
