@@ -544,11 +544,13 @@ th {
 /* 
   --- Wireframe ---
 */
-.wireframe,
+.wireframe{
+    margin: 1rem 3rem;
+}
 .wireframe a {
     text-decoration: none;
     padding: 2px 10px;
     background: none;
     color: var(--azureblue);
-    margin: 1rem 3rem;
+    
 }
