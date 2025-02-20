@@ -1,439 +1,479 @@
-/* Root Variables */
+/* 
+  --- Root Variables ---
+*/
 :root {
-  --primary-color: #2ba84a;
-  --secondary-color: #248232;
-  --accent1-color: #0471a6;
-  --accent2-color: #061826;
-  --accent3-color: #fcfffc;
-  --azureblue: rgba(9, 94, 165, 1);
-  --white: #fff;
-  --dim-white: #e0e0e0;
-  --black: #061826;
-  --light-transparent: rgba(13, 74, 170, 1);
-  --dark-transparent: rgb(0 0 0 / 0.5);
+    --primary-color: #2ba84a;
+    --secondary-color: #248232;
+    --accent1-color: #0471a6;
+    --accent2-color: #061826;
+    --accent3-color: #fcfffc;
+    --azureblue: rgba(9, 94, 165, 1);
+    --white: #fff;
+    --dim-white: #e0e0e0;
+    --black: #061826;
+    --light-transparent: rgba(13, 74, 170, 1);
+    --dark-transparent: rgb(0 0 0 / 0.5);
 }
 
-/* Global Styles */
+/* 
+  --- Global Styles ---
+*/
 * {
-  padding: 0;
-  border: 0px solid black;
+    padding: 0;
+    border: 0px solid black;
 }
 
 body {
-  background-color: #f4f4f4;
+    background-color: #f4f4f4;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", Arial, sans-serif;
-  font-weight: 800;
-  color: var(--azureblue);
-  place-self: center;
+/* 
+  --- Typography ---
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 800;
+    color: var(--azureblue);
+    place-self: center;
 }
 
 h2 {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
 }
 
 * {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  color: #000;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #000;
 }
 
-/* Header */
+/* 
+  --- Header ---
+*/
 header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  padding: 20px;
-  background: var(--azureblue);
-  margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 20px;
+    background: var(--azureblue);
+    margin-bottom: 10px;
 }
 
-.logo img, 
+.logo img,
 .logo a {
-  height: 85px;
-  width: 90px;
-  align-self: center;
-  border: 1px solid #ccc;
-  border-radius: 30%;
-  cursor: pointer;
+    height: 85px;
+    width: 90px;
+    align-self: center;
+    border: 1px solid #ccc;
+    border-radius: 30%;
+    cursor: pointer;
 }
 
 .logo a {
-  margin-left: 40px;
-  border: none;
+    margin-left: 40px;
+    border: none;
 }
 
 nav {
-  display: flex;
-  margin-right: 40px;
+    display: flex;
+    margin-right: 40px;
 }
 
 nav a {
-  text-decoration: none;
-  display: block;
-  flex: 3 1 100px;
-  text-align: center;
-  align-self: center;
-  margin: 0 10px;
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--azureblue);
-  background: var(--white);
-  padding: 2px;
-  border: 2px solid #fff;
-  border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    flex: 3 1 100px;
+    text-align: center;
+    align-self: center;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--azureblue);
+    background: var(--white);
+    padding: 2px;
+    border: 2px solid #fff;
+    border-radius: 5px;
 }
 
 nav a:hover {
-  background: var(--azureblue);
-  color: var(--white);
+    background: var(--azureblue);
+    color: var(--white);
 }
 
-/* Hero Section */
+/* 
+  --- Hero Section ---
+*/
 .hero {
-  position: relative;
-  margin-bottom: 0;
-  max-height: 738px;
-  overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+    max-height: 738px;
+    overflow: hidden;
 }
 
 .hero > img {
-  width: 100%;
-  margin: auto;
-  clear: both;
+    width: 100%;
+    margin: auto;
+    clear: both;
 }
 
 .hero div {
-  width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: var(--dark-transparent);
-  padding: 40px;
-  color: var(--white);
-  text-align: center;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--dark-transparent);
+    padding: 40px;
+    color: var(--white);
+    text-align: center;
 }
 
-.hero div h1, .hero div p {
-  color: var(--white);
+.hero div h1,
+.hero div p {
+    color: var(--white);
 }
 
 .hero .hero div h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .hero article img {
-  float: right;
-  margin-left: 1rem;
-  border-radius: 50%;
+    float: right;
+    margin-left: 1rem;
+    border-radius: 50%;
 }
 
-/* Section Styles */
+/* 
+  --- Section Styles ---
+*/
 section {
-  max-width: 93%;
-  background: var(--white);
-  margin: 30px auto;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-  z-index: 30;
+    max-width: 93%;
+    background: var(--white);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    z-index: 30;
 }
 
-/* History Section */
+/* 
+  --- History Section ---
+*/
 .history article {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 1rem;
-  gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+    gap: 25px;
 }
 
 .history article p {
-  flex: 2 4 200px;
+    flex: 2 4 200px;
 }
 
 .history article img {
-  flex: 2 1 100px;
+    flex: 2 1 100px;
 }
 
-/* Adventure Section */
+/* 
+  --- Adventure Section ---
+*/
 .adventure-images {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
-  gap: 1rem;
-  justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 1rem;
+    justify-content: space-evenly;
 }
 
 .adventure-images > figure {
-  width: 100%;
-  margin: 0;
+    width: 100%;
+    margin: 0;
 }
 
 .adventure-images img {
-  width: 100%;
+    width: 100%;
 }
 
 .adventure-images figcaption {
-  width: 100%;
-  text-align: center;
-  font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
 }
 
-/* Footer */
+/* 
+  --- Footer ---
+*/
 footer {
-  background: var(--azureblue);
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  place-content: center;
+    background: var(--azureblue);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    place-content: center;
 }
 
 footer p {
-  color: var(--white);
-  justify-self: center;
-  align-self: center;
+    color: var(--white);
+    justify-self: center;
+    align-self: center;
 }
 
 footer nav {
-  margin: 0 0 0 1rem;
+    margin: 0 0 0 1rem;
 }
 
 footer a {
-  background: none;
-  border: none;
-  height: 100%;
-  justify-content: space-evenly;
-  align-content: flex-end;
-  cursor: pointer;
+    background: none;
+    border: none;
+    height: 100%;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    cursor: pointer;
 }
 
 footer a img {
-  padding: 0.5rem;
-  place-self: center;
-  align-self: center;
-  background: var(--white);
-  border: 2px solid var(--white);
-  border-radius: 6px;
-  margin: 0;
+    padding: 0.5rem;
+    place-self: center;
+    align-self: center;
+    background: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 6px;
+    margin: 0;
 }
 
 footer img:hover {
-  background: var(--azureblue);
-  color: var(--white);
+    background: var(--azureblue);
+    color: var(--white);
 }
 
-/* Company Info */
+/* 
+  --- Company Info ---
+*/
 .company-info div {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 1.2rem;
-  align-items: center;
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    align-items: center;
+    margin: 0 auto;
 }
 
-.company-info div img, 
+.company-info div img,
 .company-info > p > span {
-  padding: 10px;
-  border: 1px solid #CCC;
-  border-radius: 1rem;
-  margin: 0 1rem 0 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    margin: 0 1rem 0 0;
 }
 
-/* Map */
+/* 
+  --- Map ---
+*/
 .map iframe {
-  width: 100%;
-  height: 450px;
-  place-self: center;
-  border: 1px solid #ccc;
+    width: 100%;
+    height: 450px;
+    place-self: center;
+    border: 1px solid #ccc;
 }
 
-/* Employee Profiles */
+/* 
+  --- Employee Profiles ---
+*/
 .employee-profiles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: auto;
 }
 
 .employee-profiles figcaption {
-  text-align: center;
+    text-align: center;
 }
 
 .employee-profiles img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  place-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    place-content: center;
 }
 
-/* Form Styles */
+/* 
+  --- Form Styles ---
+*/
 form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background: var(--white);
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: var(--white);
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 100%;
 }
 
 fieldset {
-  border: none;
+    border: none;
 }
 
 legend {
-  display: none;
+    display: none;
 }
 
 .item1 {
-  flex: 3 1 300px;
-  padding: 0;
+    flex: 3 1 300px;
+    padding: 0;
 }
 
 .item2 {
-  flex: 1 3 300px;
-  padding-right: 20px;
+    flex: 1 3 300px;
+    padding-right: 20px;
 }
 
-.item1, .item2 {
-  margin-bottom: auto;
+.item1,
+.item2 {
+    margin-bottom: auto;
 }
 
 input[type="text"],
 input[type="email"],
 textarea,
 input[type="name"] {
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 10px;
-  border: 1px solid #CCC;
-  border-radius: 4px;
-  box-sizing: border-box;
-  background: rgba(9, 94, 165, 0.1);
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: rgba(9, 94, 165, 0.1);
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus,
 input[type="name"]:focus {
-  border-color: var(--azureblue);
-  outline: none;
+    border-color: var(--azureblue);
+    outline: none;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-  display: inline;
-  margin: 0 1rem 2rem 0;
-  float: left;
-  place-self: center;
+    display: inline;
+    margin: 0 1rem 2rem 0;
+    float: left;
+    place-self: center;
 }
 
-.check-box, .radio {
-  margin: 0 auto 2rem 0;
+.check-box,
+.radio {
+    margin: 0 auto 2rem 0;
 }
 
 label[for="subscribe"] {
-  width: 80%;
+    width: 80%;
 }
 
-button, 
+button,
 a {
-  background-color: var(--azureblue);
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
+    background-color: var(--azureblue);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 button:hover,
- a:hover {
-  background-color: #004d00;
-  color: var(--white);
+a:hover {
+    background-color: #004d00;
+    color: var(--white);
 }
 
 label {
-  display: inline-block;
-  margin: 0px;
-  font-weight: bold;
+    display: inline-block;
+    margin: 0px;
+    font-weight: bold;
 }
 
-/* Newsletter */
+/* 
+  --- Newsletter --- 
+*/
 .newsletter {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .newsletter div {
-  font-weight: 200;
-  flex-grow: 2;
-  padding: 10px;
-  margin: 0 0.5rem 2rem 0.5rem;
+    font-weight: 200;
+    flex-grow: 2;
+    padding: 10px;
+    margin: 0 0.5rem 2rem 0.5rem;
 }
 
 .newsletter fieldset {
-  flex-grow: 3;
+    flex-grow: 3;
 }
 
 .newsletter h3 {
-  font-size: 1.6em;
-  margin-bottom: 10px;
-  color: #333;
-  font-weight: normal;
-  text-align: left;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: normal;
+    text-align: left;
 }
 
 .newsletter p {
-  color: #333;
+    color: #333;
 }
 
 .newsletter fieldset label {
-  margin-bottom: 5px;
-  display: none;
+    margin-bottom: 5px;
+    display: none;
 }
 
 .newsletter fieldset input {
-  padding: 10px;
-  margin-bottom: 14px;
+    padding: 10px;
+    margin-bottom: 14px;
 }
 
 #subscribe-btn {
-  width: 100%; /* Make button the same width as the input fields */
+    width: 100%; /* Make button the same width as the input fields */
 }
 
-/* Call to Action */
+/* 
+  --- Call to Action --- 
+*/
 .call-to-action {
-  text-align: center;
-  padding: 20px;
+    text-align: center;
+    padding: 20px;
 }
 
 .call-to-action a,
 .trips-cta a {
-  color: white;
-  text-decoration: none; 
-} 
-
-.call-to-action a, 
-.trips-cta a {
-  display: inline-block;
-  margin: 1rem 0 0.5rem 0;
+    color: white;
+    text-decoration: none;
 }
 
-/* Purpose Section */
+.call-to-action a,
+.trips-cta a {
+    display: inline-block;
+    margin: 1rem 0 0.5rem 0;
+}
+
+/* 
+  --- Purpose Section ---
+*/
 .purpose-and-offering,
 .trip-descriptions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .purpose-and-offering div {
@@ -451,58 +491,64 @@ label {
 
 .purpose-and-offering div,
 .trip {
-  width: 300px;
-  flex-grow: 2;
-  text-align: center;
-  margin: 20px;
+    width: 300px;
+    flex-grow: 2;
+    text-align: center;
+    margin: 20px;
 }
 
 .purpose-and-offering div img,
 .trip img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
-/* Trip call to action Section */
+/* 
+  --- Trip call to action Section ---
+*/
 .trips-cta {
-  text-align: center;
-  margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .trips-cta a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-/* Trip Table Section */
+/* 
+  --- Trip Table Section ---
+*/
 .trip-table {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 }
 
 th {
-  background-color: rgba(9, 94, 165, 0.9);
-  color: var(--white);
+    background-color: rgba(9, 94, 165, 0.9);
+    color: var(--white);
 }
 
-.wireframe, 
+/* 
+  --- Wireframe ---
+*/
+.wireframe,
 .wireframe a {
-  text-decoration: none;
-  padding: 2px 10px;
-  background: none;
-  color: var(--azureblue);
-  margin: 1rem 3rem;
+    text-decoration: none;
+    padding: 2px 10px;
+    background: none;
+    color: var(--azureblue);
+    margin: 1rem 3rem;
 }
-
-
